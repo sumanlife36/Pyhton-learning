@@ -1,0 +1,11 @@
+# Python program to count the number 4 in a given list
+def checkNumber(numberList,val):
+    count=0
+    for i in numberList:
+        if i==val:
+            count+=1
+    return count
+
+numbers=[10,4,9,6,4,9,44,6,4,5,69,8]
+value=4
+print("Number %d present in the list %d times"%(value,checkNumber(numbers,value)))
