@@ -1,3 +1,58 @@
+#
+import datetime
+date=datetime.datetime.now()
+print("Current date and time: ",date)
+print (date.strftime("%Y/%m/%d %H:%M:%S"))
+#-----------------------------------------------------------------
+
+#Area of a Circle
+from math import pi
+radius=int(input("Enter the value of radius: "))
+area=pi*radius*radius
+print("The area of a circle is: ",area)
+#-----------------------------------------------------------------
+
+#computes the value of n+nn+nnn
+n=int(input("Enter the value: "))
+n1=int("%s"%n)
+n2=int("%s%s"%(n,n))
+n3=int("%s%s%s"%(n,n,n))
+result=n1+n2+n3
+print("The number result as %d+%d+%d is: "%(n1,n2,n3),result)
+#-----------------------------------------------------------------
+
+#Calculate number of days between two dates
+from datetime import date
+f1_date=date(2014,7,2)
+f2_date=date(2014,7,11)
+delta=f2_date-f1_date
+print("The difference of days in these two dates are: ",delta.days)
+#-----------------------------------------------------------------
+
+#Calculate the sum of three given numbers, if the values are equal 
+#then return thrice of their sum
+def sum_thrice(x,y,z):
+    if x==y==z:
+        sum=x*3
+    else:
+        sum=x+y+z
+    return sum
+num1=int(input("Enter the first number: "))
+num2=int(input("Enter the second number: "))
+num3=int(input("Enter the third number: "))
+
+result=sum_thrice(num1,num2,num3)
+print("The result is: ",result)
+
+#-----------------------------------------------------------------
+
+# Find whether a given number (accept from the user) is even or odd
+num=int(input("Enter the number: "))
+if num%2==0:
+    print("The number %d is even number"%num)
+else:
+    print("The number %d is odd number"%num)
+#-----------------------------------------------------------------
 # Python program to count the number 4 in a given list
 def checkNumber(numberList,val):
     count=0
