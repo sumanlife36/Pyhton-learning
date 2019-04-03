@@ -64,3 +64,11 @@ def checkNumber(numberList,val):
 numbers=[10,4,9,6,4,9,44,6,4,5,69,8]
 value=4
 print("Number %d present in the list %d times"%(value,checkNumber(numbers,value)))
+
+#Write a Python program to print out a set containing all the colors from color_list_1 which are not present
+# in color_list_2. Go to the editor
+#-----------------------------------------------------------------
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+
+print(color_list_1.difference(color_list_2))
